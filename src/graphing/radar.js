@@ -443,7 +443,7 @@ const Radar = function (size, radar) {
     header.select('.radar-title')
       .append('div')
       .attr('class', 'radar-title__logo')
-      .html('<a href="https://www.thoughtworks.com"> <img src="/images/logo.png" /> </a>')
+      .html('<a href="https://www.hostelworld.com"> <img src="/images/logo.svg" /> </a>')
 
     buttonsGroup = header.append('div')
       .classed('buttons-group', true)
@@ -507,7 +507,7 @@ const Radar = function (size, radar) {
       .append('div')
       .attr('class', 'footer-content')
       .append('p')
-      .html('Powered by <a href="https://www.thoughtworks.com"> ThoughtWorks</a>. ' +
+      .html('Hostelworld Powered by <a href="https://www.thoughtworks.com"> ThoughtWorks</a>. ' +
       'By using this service you agree to <a href="https://www.thoughtworks.com/radar/tos">ThoughtWorks\' terms of use</a>. ' +
       'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. ' +
       'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.')
@@ -594,7 +594,7 @@ const Radar = function (size, radar) {
       .append('div')
       .classed('multiple-sheet-button-group', true)
 
-    alternativeSheetButton.append('p').text('Choose a sheet to populate radar')
+    alternativeSheetButton.append('p').text('')
     alternatives.forEach(function (alternative) {
       alternativeSheetButton
         .append('div:a')
