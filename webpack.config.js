@@ -32,12 +32,12 @@ let plugins = [
   new HtmlWebpackPlugin({
     template: './src/index.html',
     chunks: ['main'],
-    inject: 'body'
+    inject: 'hw-radar'
   }),
   new HtmlWebpackPlugin({
     template: './src/error.html',
     chunks: ['common'],
-    inject: 'body',
+    inject: 'hw-radar',
     filename: 'error.html'
   }),
   new webpack.DefinePlugin({

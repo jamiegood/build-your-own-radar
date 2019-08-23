@@ -430,7 +430,7 @@ const Radar = function (size, radar) {
   }
 
   function plotRadarHeader () {
-    header = d3.select('body').insert('header', '#radar')
+    header = d3.select('hw-radar').insert('header', '#radar')
     header.append('div')
       .attr('class', 'radar-title')
       .append('div')
@@ -443,7 +443,7 @@ const Radar = function (size, radar) {
     header.select('.radar-title')
       .append('div')
       .attr('class', 'radar-title__logo')
-      .html('<a href="https://www.hostelworld.com"> <img src="/images/logo.svg" /> </a>')
+      .html('<a href="https://www.hostelworld.com"> <img src="/images/logo-small.png" /> </a>')
 
     buttonsGroup = header.append('div')
       .classed('buttons-group', true)
@@ -501,16 +501,13 @@ const Radar = function (size, radar) {
   }
 
   function plotRadarFooter () {
-    d3.select('body')
+    d3.select('hw-radar')
       .insert('div', '#radar-plot + *')
       .attr('id', 'footer')
       .append('div')
       .attr('class', 'footer-content')
       .append('p')
-      .html('Hostelworld Powered by <a href="https://www.thoughtworks.com"> ThoughtWorks</a>. ' +
-      'By using this service you agree to <a href="https://www.thoughtworks.com/radar/tos">ThoughtWorks\' terms of use</a>. ' +
-      'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. ' +
-      'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.')
+   
   }
 
   function mouseoverQuadrant (order) {
@@ -578,7 +575,7 @@ const Radar = function (size, radar) {
   }
 
   self.init = function () {
-    radarElement = d3.select('body').append('div').attr('id', 'radar')
+    radarElement = d3.select('hw-radar').append('div').attr('id', 'radar')
     return self
   }
 
