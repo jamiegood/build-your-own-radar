@@ -228,7 +228,7 @@ const GoogleSheetInput = function () {
 
       plotForm(content)
 
-      plotFooter(content)
+      //plotFooter(content)
     }
   }
 
@@ -252,7 +252,7 @@ function plotLoading (content) {
 
   var bannerText = '<h1>Building your radar...</h1><p>Your Technology Radar will be available in just a few seconds</p>'
   plotBanner(content, bannerText)
-  plotFooter(content)
+ // plotFooter(content)
 }
 
 function plotLogo (content) {
@@ -262,16 +262,16 @@ function plotLogo (content) {
 }
 
 function plotFooter (content) {
-  content
-    .append('div')
-    .attr('id', 'footer')
-    .append('div')
-    .attr('class', 'footer-content')
-    .append('p')
-    .html('Powered by <a href="https://www.thoughtworks.com"> ThoughtWorks</a>. ' +
-      'By using this service you agree to <a href="https://www.thoughtworks.com/radar/tos">ThoughtWorks\' terms of use</a>. ' +
-      'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. ' +
-      'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.')
+  // content
+  //   .append('div')
+  //   .attr('id', 'footer')
+  //   .append('div')
+  //   .attr('class', 'footer-content')
+  //   .append('p')
+  //   .html('Powered by <a href="https://www.thoughtworks.com"> ThoughtWorks</a>. ' +
+  //     'By using this service you agree to <a href="https://www.thoughtworks.com/radar/tos">ThoughtWorks\' terms of use</a>. ' +
+  //     'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. ' +
+  //     'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.')
 }
 
 function plotBanner (content, text) {
@@ -345,7 +345,7 @@ function plotErrorMessage (exception) {
   errorContainer.append('div').append('p')
     .html(homePage)
 
-  plotFooter(content)
+  //plotFooter(content)
 }
 
 function plotUnauthorizedErrorMessage () {
